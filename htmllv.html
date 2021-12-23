@@ -15,7 +15,6 @@
 	document.body.addEventListener("click", function (evt) {
     console.dir(this);
     console.log(evt.target);
-    alert("Bạn Đang Nghe");
 	var audio = new Audio("tuyhongnhan.mp3");
 	audio.oncanplaythrough = function(){
 		audio.play();
