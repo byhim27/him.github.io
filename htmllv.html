@@ -11,19 +11,23 @@
 </script>
 </head>
 <body bgcolor="#000000">
-<script>
-	document.body.addEventListener("click", function (evt) {
-    console.dir(this);
-    console.log(evt.target);
-	var audio = new Audio("muatuyet.mp3");
-	audio.oncanplaythrough = function(){
-		audio.play();
-	}
-	audio.loop = true;
-	audio.onended = function(){
-		audio.play();
-	}
-});
+<script>var f=0;
+      document.body.addEventListener("click", function (evt) {
+         f=f+1;
+        //alert(f);
+        if(f==1){
+        console.dir(this);
+        console.log(evt.target);
+        var audio = new Audio("muatuyet.mp3");
+        audio.oncanplaythrough = function(){
+          audio.play();
+        }
+        audio.loop = true;
+        audio.onended = function(){
+          audio.play();
+        }
+    
+      }});
 </script>
 <center>
 <img src="https://timoday.edu.vn/wp-content/uploads/2020/06/love1.gif" width="300" height="25">
